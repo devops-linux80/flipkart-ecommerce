@@ -13,7 +13,7 @@ public LoginContext (final String name, final Subject subject,
   if (entries == null)
     entries = config.getAppConfigurationEntry (OTHER);
   if (entries == null)
-    throw new LoginException ("no configured modules for application "
+    throw new LoginException ("no configured modules for application: welcome "
                               + name);
   this.entries = entries;
   modules = new LoginModule[entries.length];
